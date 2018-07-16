@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-image: url("cat.jpg");
+  height: 59.2rem;
+  width: 100%;
+}
+
+.container p {
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  top: 10rem;
+  left: 44rem;
+  border: 2px solid white;
+  width: 9rem;
+  padding: 0.5rem 1rem;
+}
+
+.container p:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid grey;
+  cursor: pointer;
+}
+
+.container p:active {
+  top: 10.1rem;
+}
+
+
+/**Media Queries-------------------------------------------------------------*/
+@media only screen and (max-width: 720px) {
+  .container {
+    width: 175%;
+  }
+
+  .container p {
+    color: red;
+  }
+}
